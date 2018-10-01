@@ -17,9 +17,20 @@
     border-style: solid;
     border-radius: 8px ;
     margin-bottom: 10%;
-
 }
 
+.div-instead-image{
+    min-height: 200px;
+    border-radius: 3px 3px 3px 3px;
+    background-color: #385d7a;
+    color: white;
+}
+.div-instead-image-latest{
+
+    min-height: 85px;
+    border-radius: 3px 3px 3px 3px;
+    background: white ;
+}
 .search__input_field{
     border-radius: 5px ;
     margin-left: 1% ;
@@ -60,6 +71,7 @@
 .a-decor-none{
 
     color: #80bdff;
+
 }
 .a-decor-none:hover{
 

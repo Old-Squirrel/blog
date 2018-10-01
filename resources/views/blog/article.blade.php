@@ -15,8 +15,17 @@
                         {{$article->title}}
                     </h3>
             </div>
-            <img class="card-img-top " src="{{asset($article->image)}}">
-            <div class="card-body">
+            @if($article->image != null)
+                <img class="card-img-top " src="{{asset($article->image)}}">
+                <div class="card-body">
+                    @else
+                        <div class="card-body">
+                            <div class="border border-info div-instead-image text-center">
+                                <h4 class="mt-5">
+                                    News image
+                                </h4>
+                            </div>
+                            @endif
                 <p class="card-text text-left">
                     {{$article->description}}
                 </p>

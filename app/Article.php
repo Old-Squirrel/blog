@@ -21,12 +21,6 @@ class Article extends Model
 
     }
 
-    public function setImageAttribute(){
-
-        $this->attributes['image'] = "img/".$this->slug.".jpg";
-
-    }
-
 
     public function categories(){
 

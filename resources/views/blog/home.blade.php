@@ -4,8 +4,7 @@
 @endsection
 @section('content')
 
- @include('blog.partials.home_main')
-
- @include('blog.partials.home_popular')
- @include('blog.partials.home_latest')
+    @include('blog.partials.mainNews')
+    @include('blog.partials.popularNews')
+    @include('blog.partials.latestNews')
 @endsection

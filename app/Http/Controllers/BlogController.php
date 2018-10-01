@@ -54,30 +54,30 @@ class BlogController extends Controller
             ->where('published', 1);
 
         return view('blog.home', [
-            'latest_articles' => $articles
+            'latestNews' => $articles
                 ->with('users')
                 ->paginate(7),
 
-            'popular_articles' => Article::where('type', 'popular')
+            'popularNews' => Article::where('type', 'popularNew')
                 ->orderBy('created_at', 'desc')
                 ->where('published', 1)
                 ->with('categories')
                 ->paginate(7),
 
-            'main_articles' => Article::where('type', 'main')
+            'mainNews' => Article::where('type', 'mainNew')
                 ->where('published', 1)
                 ->orderBy('created_at', 'desc')
                 ->with('categories')
                 ->paginate(4),
 
 
-            'good_articles' => Article::where('type', 'good')
+            'goodNews' => Article::where('type', 'goodNew')
                 ->orderBy('created_at')
                 ->where('published', 1)
                 ->with('categories')
                 ->paginate(3),
 
-            'popular_main_news' => Article::where('type', 'popular_main')
+            'fakeNews' => Article::where('type', 'fakeNew')
                 ->orderBy('created_at')
                 ->where('published', 1)
                 ->paginate(4),

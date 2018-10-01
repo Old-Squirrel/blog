@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', 'BlogController@blog')->name('blog');
 
 Route::any('/search', 'BlogController@search')->name('search');
